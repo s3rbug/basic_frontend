@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 750px;
+    width: 1000px;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+.wrapper div {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-img{
+    width: 30%;
+    height: 70%;
+    background: red;
+    float: left;
+}
+
+.body-text{
+    height: 70%;
+    background: green;
+}
+
+.footer-img{
+    width: 100%;
+    height: 15%;
+    background: yellow;
+}
+
+.footer-text{
+    width: 100%;
+    height: 15%;
+    background: purple;
+}
