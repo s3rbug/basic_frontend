@@ -1,0 +1,14 @@
+.city {
+    text-align: justify;
+}
+.city p {
+    text-indent: 25px;
+}
+.city-image {
+    width: 500px;
+    height: 300px;
+}
+
+#changable-city-image {
+    display: none;
+}
