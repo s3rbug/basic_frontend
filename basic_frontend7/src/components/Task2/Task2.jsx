@@ -6,9 +6,9 @@ const Task2 = () => {
 	const [goods, setGoods] = useState(null);
 
 	useEffect(() => {
-		fetch("https://fakestoreapi.com/products?limit=10")
+		fetch("https://dummyjson.com/products?limit=10")
 			.then((response) => response.json())
-			.then((data) => setGoods(data));
+			.then((data) => setGoods(data.products));
 	}, []);
 
 	if (!goods) {
@@ -21,7 +21,7 @@ const Task2 = () => {
 				return (
 					<GoodsCard
 						key={good.title}
-						image={good.image}
+						image={good.images[0]}
 						price={good.price}
 						title={good.title}
 						description={good.description}
