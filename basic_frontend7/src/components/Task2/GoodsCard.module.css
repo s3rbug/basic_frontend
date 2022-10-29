@@ -1,0 +1,21 @@
+.card {
+    width: 330px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    border: 2px solid lightgray;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 200px;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.description{
+    text-align: justify;
+}

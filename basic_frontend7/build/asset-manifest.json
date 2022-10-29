@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/basic_frontend/basic_frontend7/build/static/css/main.eac07faf.css",
+    "main.js": "/basic_frontend/basic_frontend7/build/static/js/main.c233743e.js",
+    "index.html": "/basic_frontend/basic_frontend7/build/index.html",
+    "main.eac07faf.css.map": "/basic_frontend/basic_frontend7/build/static/css/main.eac07faf.css.map",
+    "main.c233743e.js.map": "/basic_frontend/basic_frontend7/build/static/js/main.c233743e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eac07faf.css",
+    "static/js/main.c233743e.js"
+  ]
+}
