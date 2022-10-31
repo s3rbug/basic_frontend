@@ -8,10 +8,6 @@
     line-height: 1.8;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 /* 1200px 992px 768px 576px */
 
 @media (min-width: 1201px) {
@@ -19,11 +15,6 @@ body {
     /* from 1201px (inclusive) */
     .achievements-items {
         grid-template-columns: repeat(4, 1fr);
-    }
-
-    .info,
-    .photo {
-        max-width: 40%;
     }
 
     .main-text {
@@ -36,11 +27,6 @@ body {
 
     .container {
         max-width: 1140px;
-    }
-
-    .photo img {
-        height: 700px;
-        width: 550px;
     }
 }
 
@@ -62,16 +48,15 @@ body {
     .container {
         max-width: 960px;
     }
-
-    .photo img {
-        height: 600px;
-        width: 450px;
-    }
 }
 
 @media (max-width: 992px) {
 
     /* from 769px to 992px (inclusive) */
+    .photo {
+        margin: 0 auto !important;
+    }
+
     .footer-content {
         flex-direction: column;
     }
@@ -146,6 +131,11 @@ body {
 @media (max-width: 768px) {
 
     /* from 577px to 768px (inclusive) */
+    .quote {
+        left: 0 !important;
+        padding: 20px !important;
+    }
+
     .menu-content {
         flex-direction: column;
     }
@@ -182,6 +172,10 @@ body {
 @media (max-width: 576px) {
 
     /* from 0px to 576px (inclusive) */
+    .quote * {
+        font-size: 14px !important;
+    }
+
     .content {
         margin: 30px 0 !important;
     }
@@ -205,6 +199,16 @@ body {
     .blogs {
         grid-template-columns: 1fr !important;
     }
+}
+
+.photo img {
+    /* max-width: 100%; */
+    max-width: 100%;
+}
+
+.info,
+.photo {
+    max-width: 40%;
 }
 
 .row {
@@ -341,10 +345,12 @@ a {
 
 .photo {
     position: relative;
+    flex-grow: 1;
 }
 
 .background::before {
     content: "";
+    display: fixed;
     position: absolute;
     width: 110%;
     height: 60%;
@@ -360,7 +366,7 @@ a {
     background: #000839;
     width: 110%;
     bottom: -20px;
-    left: 0;
+    left: -100px;
 }
 
 .quote * {
@@ -446,8 +452,7 @@ a {
 }
 
 .photograph img {
-    height: 700px;
-    width: 550px;
+    max-width: 100%;
 }
 
 .services {
